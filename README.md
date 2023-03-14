@@ -39,3 +39,12 @@ module.exports = {
   node command-tool console 11
 ``` 
 就会输出11
+
+### 发包
+我们在package.json 定义bin字段
+``` 
+  "bin": {
+     "command-tool": "command-tool"
+  }
+``` 
+其他项目安装了command-tool依赖包后就可以使用command-tool提供的命令
